@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_i"
+    tools:context=".HalMainActivity" >
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnedUkasi"
+        android:layout_alignRight="@+id/btnedUkasi"
+        android:layout_below="@+id/btnedUkasi"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/newgame_selector" />
+
+    <Button
+        android:id="@+id/buttonSkor"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/btnNewGame"
+        android:layout_alignRight="@+id/btnNewGame"
+        android:layout_below="@+id/btnNewGame"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/skor_selector" />
+
+    <TextView
+        android:id="@+id/text_Footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/foot_app_name"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        style="@style/DashboardButton"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/buttonSkor"
+        android:layout_alignRight="@+id/buttonSkor"
+        android:layout_below="@+id/buttonSkor"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/about_selector" />
+
+    <Button
+        android:id="@+id/btnedUkasi"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/text_Footer"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/text_Footer"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/edu_selector" />
+
+</RelativeLayout>

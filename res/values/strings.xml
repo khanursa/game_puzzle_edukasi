@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Game Edukasi</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    	
+	<string name="label_show_numbers_none">None</string>
+	<string name="label_show_numbers_some">Some</string>
+	<string name="label_show_numbers_all">All</string>
+	
+	<string name="finished_type_expert_puzzle_in_n_moves">Finished {0} puzzle {1,choice,0#|1# (expert mode)"} in {2} {2,choice,0#moves|1#move|1&lt;moves}.</string>
+	<string name="type_expert_puzzle_n_moves_so_far">{0} puzzle.\n{2} {2,choice,0#moves|1#move|1&lt;moves} so far.{1,choice,0#|1#\nExpert mode is on.}</string>
+	<string name="message_stats_best_avg_plays">{0}\n\nBest: {1} {1,choice,0#moves|1#move|1&lt;moves}\nAverage: {2,number,0.##} moves\nPlays: {3}</string>
+		
+    <string name="btn_back">Kembali</string>
+    <string name="btn_play">Play Edukasi</string>
+    <string name="txt_jenis_buah">Jenis Buah-Buahan</string>
+    <string name="txt_judul_pilGbr">Pilih Buah-Buahan</string>
+    <string name="btn_edu">Edukasi</string>
+    <string name="btn_game">New Game</string>
+    <string name="btn_skor">Skor</string>
+    <string name="btn_about">About</string>
+    <string name="foot_app_name">(c) Copyright Khair 2016</string>
+    <string name="txtLevelSkor1">Beginer</string>
+    <string name="txtLevelSkor2">Intermediate</string>
+    <string name="txtLevelSkor3">Advanced</string>
+    <string name="acak">Acak</string>
+    <string name="solved">Solved</string>
+    <string name="spcreen_text">Tunggu...</string>
+    <string name="txtinput_nama">Nama :</string>
+    <string name="btnInput_User">Simpan</string>
+    <string name="scridpengguna">Pengguna</string>
+    <string name="about">About</string>
+    
+</resources>

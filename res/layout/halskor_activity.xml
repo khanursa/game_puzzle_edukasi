@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_iii"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/judul" />
+
+    <TextView
+        android:id="@+id/textJudulSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textBeginer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textJudulSkor"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtLevelSkor1"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textIntermediate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textBeginer"
+        android:layout_alignBottom="@+id/textBeginer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtLevelSkor2"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textIntermediate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/txtLevelSkor3"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBarBeginer"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ratingBarIntermed"
+        android:isIndicator="true"
+        android:minHeight="40dp"
+        android:minWidth="20dp"
+        android:mirrorForRtl="false"
+        android:numStars="3"
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:transformPivotX="20dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarAdvanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textIntermediate"
+        android:isIndicator="true"
+        android:numStars="3"
+        android:minHeight="40dp"
+        android:scaleX="0.6"      
+        android:scaleY="0.6"
+        android:transformPivotX="115dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarIntermed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBarAdvanced"
+        android:isIndicator="true"
+        android:layout_centerHorizontal="true"
+        android:numStars="3"
+        android:minHeight="40dp"
+        android:scaleX="0.6"      
+        android:scaleY="0.6"
+        android:transformPivotX="70dp" />
+
+    <ImageView
+        android:id="@+id/imageSkor"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_above="@+id/textUserScore"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBarBeginer"
+        android:src="@drawable/image_1" />
+
+    <TextView
+        android:id="@+id/textUserScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/scridpengguna"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

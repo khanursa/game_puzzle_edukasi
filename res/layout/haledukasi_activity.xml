@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr_iii" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="310dp"
+        android:layout_height="310dp"
+        android:layout_above="@+id/buttonEdukasi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textJenisBuah"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:fadingEdge="horizontal"
+        android:longClickable="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="310dp"
+            android:layout_height="911dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="false"
+            android:longClickable="false"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical" >
+
+            <ImageView
+                android:id="@+id/imagePreView"
+                android:layout_width="310dp"
+                android:layout_height="320dp"
+                android:maxHeight="480dp"
+                android:maxWidth="480dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/apel1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="310dp"
+                android:layout_height="310dp"
+                android:layout_marginTop="5dp"
+                android:maxHeight="480dp"
+                android:maxWidth="480dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/apel2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:maxHeight="480dp"
+                android:maxWidth="480dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/apel3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_selector" />
+
+    <Button
+        android:id="@+id/buttonEdukasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonKembali"
+        android:layout_alignBottom="@+id/buttonKembali"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/play_selector" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonKembali"
+        android:layout_alignRight="@+id/buttonEdukasi"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/judul" />
+
+    <TextView
+        android:id="@+id/textJenisBuah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_jenis_buah"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+</RelativeLayout>
